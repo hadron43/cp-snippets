@@ -1,0 +1,65 @@
+{
+	"Competetive Programming": {
+		"prefix": "_cp",
+		"body": [
+			"/*",
+			" * @hadron43, Expert soon",
+			" * Good luck!",
+			" */",
+			"#include <bits/stdc++.h>",
+			"using namespace std;",
+			"",
+			"#define modulo 1000000007",
+			"#define maxsize 200000",
+			"typedef long long ll;",
+			"",
+			"// vector<int> arr;",
+			"// map<int, int> m;",
+			"ll T, N;",
+			"",
+			"void solve() {",
+			"\t$0",
+			"}",
+			"",
+			"int main() {",
+				"\tcin>>T;",
+				"\tfor(int t=0; t<T; ++t) {",
+					"\t\tcin>>N;",
+					"\t\tsolve();",
+				"\t}",
+			"}",
+			""
+		],
+		"description": "cp boiler code"
+	},
+
+	"Binary Exponentiation": {
+		"prefix": "_binpow",
+		"body": [
+			"ll binpow(ll a, ll b) {",
+				"\ta %= modulo;",
+				"\tll res = 1;",
+				"\twhile (b > 0) {",
+					"\t\tif (b & 1)",
+						"\t\t\tres = res * a % modulo;",
+					"\t\ta = a * a % modulo;",
+					"\t\tb >>= 1;",
+				"\t}",
+				"\treturn res;",
+			"}",
+			""
+		],
+		"description": "Binary Exponentiation With Modulo"
+	},
+
+	"Modular Inverse": {
+		"prefix": "_modinv",
+		"body": [
+			"ll modinv(ll a) {",
+				"\treturn binpow(a, modulo-2);",
+			"}",
+			""
+		],
+		"description": "Modular Inverse Algorithm"
+	}
+}
