@@ -13,9 +13,9 @@
 			"#define maxsize 200000",
 			"typedef long long ll;",
 			"",
-			"// vector<int> arr;",
-			"// map<int, int> m;",
-			"ll T, N;",
+			"// vector<ll> arr;",
+			"// map<ll, ll> m;",
+			"ll T, n, in;",
 			"",
 			"void solve() {",
 			"\t$0",
@@ -24,7 +24,7 @@
 			"int main() {",
 				"\tcin>>T;",
 				"\tfor(int t=0; t<T; ++t) {",
-					"\t\tcin>>N;",
+					"\t\tcin>>n;",
 					"\t\tsolve();",
 				"\t}",
 			"}",
@@ -55,11 +55,14 @@
 	"Modular Inverse": {
 		"prefix": "_modinv",
 		"body": [
-			"ll modinv(ll a) {",
-				"\treturn binpow(a, modulo-2);",
-			"}",
-			""
+			"ll modinv(ll a) { return binpow(a, modulo-2); }\n"
 		],
 		"description": "Modular Inverse Algorithm"
+	},
+
+	"Greatest Common Divisor" : {
+		"prefix": "_gcd",
+		"body": "ll gcd(ll a, ll b) { if (a == 0) return b; return gcd(b % a, a); }\n",
+		"description": "Euclid Algorithm for returning the gcd of two integers"
 	}
 }
