@@ -2,12 +2,12 @@
  * Author : @hadron43
  * Email : hadron43@yahoo.com
  * 
- * CPP to JSON Converter
+ * CPP to JSON string Converter
  * This prgram does the following task:
  * 
- * Read from input.cpp =>
+ * Read from input.txt =>
  * Parse to json string =>
- * store it in output.json
+ * store it in output.txt
  */
 #include <bits/stdc++.h>
 #include <fstream>
