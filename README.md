@@ -13,4 +13,4 @@ Code snippets for Programming Contests for vscode
 
 ### Sorting
 
-- `_mergesort` : Efficient merge sort, with O(1) extra space
+- `_mergesort` : Efficient merge sort
